@@ -17,6 +17,40 @@ body {
   margin: 0 auto;
 }
 
+.bg-purple{
+  color: white;
+  background-color:#8EA1E1 ;
+}
+
+.purple{
+  color:#8EA1E1 ;
+}
+
+
+h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+h2 {
+
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+.margin-sup{
+  margin-top: 40px;
+}
+
+p{
+  font-size:19px;
+  line-height: 30px;
+}
+
+li{
+  text-decoration: none;
+}
+
 .flex {
   display: flex;
 }
@@ -39,6 +73,7 @@ body {
 
 header {
   background-color: #3161E0;
+  color: white;
 }
 
 /* # Navbar */
@@ -66,6 +101,7 @@ a{
   margin: 0 15px;
   text-decoration: none;
   color: white;
+  list-style-type: none;
 }
 
 .navbar-actions {
@@ -82,22 +118,19 @@ a{
 /* # Jumbotron */
 
 .jumbotron {
-  padding: 50px;
+  padding: 50px 0;
   height: 500px;
   display: flex;
   justify-content: center;
   background-image:url("../img/jumbo.png");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  color: white;
 
 }
 
 .jumbotron .content {
   width: 50%;
-  /* height: 100%; */
-  /* margin: 0 auto; */
-  color: white;
 }
 
 .jumbotron-text{
@@ -108,7 +141,8 @@ a{
 .download, .open-discord{
   padding: 10px 15px;
   border-radius: 20px;
-  border:white
+  border:white;
+  margin:0 10px;
 }
 
 .open-discord{
@@ -117,10 +151,15 @@ a{
 }
 
 .intestazione{
-  margin: 30px;
+  margin-bottom: 20px;
+}
+ 
+/* # Main & sections */
+
+main{
+  color: black;
 }
 
-/* # Main & sections */
 section {
   padding: 50px;
   height: 600px;
@@ -131,51 +170,58 @@ section > .container {
 }
 
 .flex > .small-col {
-  flex-basis: 40%;
-  background-color: pink;
+  flex-basis: 35%;
 }
 
 .flex > .large-col {
   flex-basis: 60%;
-  background-color: dodgerblue;
 }
 
 .flex > .full-col {
-  flex-basis: 100%;
-  background-color: darkgreen;
+  height: 1000px;
+  text-align: center;
+  padding: 50px;
 }
+
+.item4{
+  max-width: 100%;
+}
+
+.download .purple{
+  margin-top: 20px;
+}
+
+
 
 /* # Footer */
 
 footer {
   padding: 50px;
   background-color: #23272a;
-  /* color: white; */
+  color: white;
 }
 
 .footer-top {
-  height: 600px;
-  padding-bottom: 30px;
+  height: 500px;
   margin-bottom: 30px;
-  border-bottom: 1px solid purple;
+  border-bottom: 1px solid #8EA1E1 ;
 
   display: flex;
 }
 
 .footer-top .footer-left {
-  flex-basis: 30%;
-  background-color: pink;
+  flex-basis: 25%;
+
 }
 
 .footer-top .footer-right {
-  flex-basis: 70%;
-  background-color: #20b2aa;
+  flex-basis: 75%;
+
 }
 
 .footer-nav {
   height: 100%;
   display: flex;
-  /* background-color: #fff; */
 }
 
 .footer-nav > div {
@@ -187,10 +233,40 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: aquamarine;
+
 }
 
-.footer-bottom > * {
-  padding: 5px 10px;
-  background-color: yellow;
+
+footer li{
+  list-style-type: none;
+  margin :15px 0;
+  text-transform: capitalize;
+}
+
+
+.flag{
+
+}
+
+.flag img{
+  width: 20px;
+}
+
+.icon{
+  margin-top: 15px;
+
+}
+
+.icon i{
+  margin-right:20px;
+}
+
+.fa-angle-down{
+  margin-left: 6px;
+  font-size: 11px;
+}
+
+.fa-arrow-down-long{
+  margin-right: 5px;
+  font-size: 11px;
 }
